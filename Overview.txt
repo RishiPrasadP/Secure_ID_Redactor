@@ -1,0 +1,67 @@
+Overview
+In an era where privacy and security are paramount, protecting sensitive personal information is a critical need. This hackathon challenges you to create a web-based tool that automatically detects and masks personal information on digital images of scanned ID documents, such as social security numbers and names, ensuring secure document handling.
+
+Objective
+Develop a tool that processes digital images of ID documents, identifies sensitive information (specifically Social Security Numbers and names), and masks it to protect privacy.
+
+Challenge Details
+•             Input: Digital images of synthetic ID documents provided as a dataset.
+
+•             Sensitive Information to Mask:
+
+–            Social Security Numbers (SSNs)
+
+–            Names
+
+•             Masking Method: Cover the identified sensitive information with black rectangles.
+
+•             Functionality:
+
+–            Allow users to upload an image via a web interface.
+
+–            Process the image to detect SSNs and names.
+
+–            Display or provide a downloadable version of the masked image.
+
+Technical Requirements
+•             Use Optical Character Recognition (OCR) to extract text from the images (e.g., Tesseract, Google Cloud Vision API).
+
+•             Apply regular expressions (regex) or similar techniques to identify SSNs (e.g., patterns like XXX-XX-XXXX) and names.
+
+•             Use image processing techniques to mask the identified areas (e.g., OpenCV, Pillow).
+
+•             Build a simple, user-friendly web interface (e.g., Flask, Django, React) for image upload and result display.
+
+•             Ensure the tool processes images efficiently within a reasonable time frame.
+
+Dataset
+•             A set of synthetic ID card images with varying layouts will be provided.
+
+•             Training set: Includes annotations indicating the locations of SSNs and names.
+
+•             Test set: Images without annotations for evaluation.
+
+Evaluation Criteria
+•             Accuracy: Percentage of SSNs and names correctly detected and masked in the test set.
+
+•             User Experience: Ease of use, clarity, and responsiveness of the web interface.
+
+•             Innovation: Creative approaches to detection, masking, or interface design.
+
+Deliverables
+•             A deployed web application (e.g., hosted on Heroku, GitHub Pages, or a local server).
+
+•             Source code repository (e.g., GitHub link).
+
+•             Brief documentation or README explaining how to set up and use the tool.
+
+•             A short demo video or presentation showcasing the tool’s functionality.
+
+Bonus Points
+•             Detect and mask additional sensitive information (e.g., addresses, dates of birth).
+
+•             Implement advanced techniques like Named Entity Recognition (NER) for better name detection.
+
+•             Offer alternative masking options (e.g., blurring, pixelation).
+
+•             Enhance accessibility or usability features in the interface
